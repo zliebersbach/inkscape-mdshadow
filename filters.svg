@@ -64,16 +64,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 				operator="over"
 				in2="materialshadow_offset1"
 				in="SourceGraphic" />
-		</filter>
 
-		<filter
-			x="-0.4"
-			width="1.8"
-			style="color-interpolation-filters:sRGB;"
-			inkscape:label="Material Shadow 2"
-			id="materialshadow_filter2"
-			height="1.8"
-			y="-0.4">
 			<feFlood
 				flood-opacity="0.12"
 				flood-color="rgb(0,0,0)"
@@ -102,16 +93,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 				operator="over"
 				result="materialshadow_composite2_2"
 				id="materialshadow_feComposite2_2" />
-		</filter>
 
-		<filter
-			x="-0.4"
-			width="1.8"
-			y="-0.4"
-			height="1.8"
-			id="materialshadow_filter3"
-			inkscape:label="Material Shadow 3"
-			style="color-interpolation-filters:sRGB;">
 			<feFlood
 				id="materialshadow_feFlood3"
 				result="materialshadow_flood3"
@@ -140,6 +122,62 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 				operator="over"
 				in2="materialshadow_offset3"
 				in="SourceGraphic" />
+
+			<feMerge
+				id="materialshadow_feMerge">
+				<feMergeNode
+					id="materialshadow_feMergeNode1"
+					in="materialshadow_composite1_2" />
+				<feMergeNode
+					id="materialshadow_feMergeNode2"
+					in="materialshadow_composite2_2" />
+				<feMergeNode
+					id="materialshadow_feMergeNode3"
+					in="materialshadow_composite3_2" />
+				<feMergeNode
+					id="materialshadow_feMergeNode4"
+					in="SourceGraphic" />
+			</feMerge>
+		</filter>
+
+		<filter
+			x="-0.4"
+			width="1.8"
+			style="color-interpolation-filters:sRGB;"
+			inkscape:label="Material Shadow 2"
+			id="materialshadow_filter2"
+			height="1.8"
+			y="-0.4">
+		</filter>
+
+		<filter
+			x="-0.4"
+			width="1.8"
+			y="-0.4"
+			height="1.8"
+			id="materialshadow_filter3"
+			inkscape:label="Material Shadow 3"
+			style="color-interpolation-filters:sRGB;">
+		</filter>
+
+		<filter
+			x="-0.4"
+			width="1.8"
+			y="-0.4"
+			height="1.8"
+			id="materialshadow_filter4"
+			inkscape:label="Material Shadow 4"
+			style="color-interpolation-filters:sRGB;">
+		</filter>
+
+		<filter
+			x="-0.4"
+			width="1.8"
+			y="-0.4"
+			height="1.8"
+			id="materialshadow_filter5"
+			inkscape:label="Material Shadow 5"
+			style="color-interpolation-filters:sRGB;">
 		</filter>
 	</defs>
 </svg>

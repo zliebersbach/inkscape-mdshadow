@@ -25,6 +25,8 @@ from lxml import etree
 
 inkex.localize()
 
+FILTER_ID = "materialshadow_filter%d"
+
 def xpath(e, path):
     return e.xpath(path, namespaces=inkex.NSS)
 
@@ -48,12 +50,12 @@ class MaterialShadow(inkex.Effect):
         # Get elevation value.
         elevation = self.options.elevation
 
-        filter_ids = self.ensure_filters(filter_doc)
+        filter_id = self.ensure_filter(filter_doc, elevation)
         if len(self.selected) == 0:
             pass
         else:
             for i, element in self.selected.iteritems():
-                self.add_shadow(element, filter_ids)
+                self.add_shadow(element, filter_id)
 
     def get_label(self, element):
         xpath_result = xpath(element, "@inkscape:label")
@@ -65,52 +67,36 @@ class MaterialShadow(inkex.Effect):
         while element.get("id") in exclude_ids:
             element.set("id", "%s_%d" % (orig_id, random.randint(1000, 9999)))
 
-    def ensure_filters(self, filter_doc):
+    def ensure_filter(self, filter_doc, elevation):
         root = self.document.getroot()
+        filter_root = filter_doc.getroot()
 
         # Create defs if non existent.
-        if len(xpath(root, "//svg:svg/svg:defs")) == 0:
+        root_defs = xpath(root, "//svg:svg/svg:defs")
+        if len(root_defs) == 0:
             root.insert(0, etree.Element("defs"))
         root_defs = xpath(root, "//svg:svg/svg:defs")
         assert len(root_defs)
 
-        # Add filters.
-        filter_ids = []
-        filter_defs = xpath(filter_doc.getroot(), "//svg:svg/svg:defs/svg:filter")
+        # Add filter.
         root_filter_defs = xpath(root, "//svg:svg/svg:defs/svg:filter")
-        for filter_e in filter_defs:
-            root_filter_ids = []
-            filter_e_label = self.get_label(filter_e)
-            filter_found = False
-            for e in root_filter_defs:
-                root_filter_ids.append(e.get("id"))
-                e_label = self.get_label(e)
-                if filter_e_label == e_label:
-                    filter_ids.append(e.get("id"))
-                    filter_found = True
-                    break
+        root_filter_ids = []
+        filter_e = xpath(filter_root, "//svg:svg/svg:defs/svg:filter[@id=\"%s\"]" % FILTER_ID % elevation)
+        assert len(filter_e)
+        filter_e_label = self.get_label(filter_e[0])
 
-            if not filter_found:
-                self.ensure_new_id(filter_e, root_filter_ids)
-                root_defs[0].append(filter_e)
-                filter_ids.append(filter_e.get("id"))
+        for e in root_filter_defs:
+            root_filter_ids.append(e.get("id"))
+            e_label = self.get_label(e)
+            if filter_e_label == e_label:
+                return e.get("id")
 
-        return filter_ids
+        self.ensure_new_id(filter_e[0], root_filter_ids)
+        root_defs[0].append(filter_e[0])
+        return filter_e[0].get("id")
 
-    def add_shadow(self, element, filter_ids):
-        parent = element.getparent()
-        parent.remove(element)
-        group = etree.Element("g")
-        group_loop = group
-
-        for i in filter_ids:
-            group_current = etree.Element("g")
-            group_current.set("style", "filter:url(#%s)" % i)
-            group_loop.append(group_current)
-            group_loop = group_current
-
-        group_loop.append(element)
-        parent.append(group)
+    def add_shadow(self, element, filter_id):
+        element.set("filter", "url(#%s)" % filter_id)
 
 if __name__ == "__main__":
     ex = MaterialShadow()
