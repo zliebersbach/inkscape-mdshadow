@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+inkscape-material-shadow, an Inkscape extension for creating Material Design shadows.
+Copyright (C) 2017  Kevin Boxhoorn
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+	<_name>Material Shadow</_name>
+	<id>org.inkscape.material_shadow</id>
+	<dependency type="executable" location="extensions">material_shadow.py</dependency>
+
+	<param name="elevation" type="int" min="1" max="5" _gui-text="Elevation">1</param>
+
+	<effect>
+		<object-type>all</object-type>
+		<effects-menu>
+			<submenu _name="Shadows"/>
+		</effects-menu>
+	</effect>
+
+	<script>
+		<command reldir="extensions" interpreter="python">material_shadow.py</command>
+	</script>
+</inkscape-extension>

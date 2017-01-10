@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+inkscape-material-shadow, an Inkscape extension for creating Material Design shadows.
+Copyright (C) 2017  Kevin Boxhoorn
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<svg
+	xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:cc="http://creativecommons.org/ns#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+	xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+	<defs>
+		<filter
+			x="-0.4"
+			width="1.8"
+			y="-0.4"
+			height="1.8"
+			id="materialshadow_filter1"
+			inkscape:label="Material Shadow 1"
+			style="color-interpolation-filters:sRGB;">
+			<feFlood
+				id="materialshadow_feFlood1"
+				result="flood"
+				flood-color="rgb(0,0,0)"
+				flood-opacity="0.14" />
+			<feComposite
+				id="materialshadow_feComposite1"
+				result="materialshadow_composite1"
+				operator="in"
+				in2="SourceGraphic"
+				in="flood" />
+			<feGaussianBlur
+				id="materialshadow_feGaussianBlur1"
+				result="blur"
+				stdDeviation="20"
+				in="materialshadow_composite1"
+				dy="12" />
+			<feOffset
+				id="materialshadow_feOffset1"
+				result="offset"
+				dy="8"
+				dx="0" />
+			<feComposite
+				id="materialshadow_feComposite1_2"
+				result="materialshadow_composite2"
+				operator="over"
+				in2="offset"
+				in="SourceGraphic" />
+		</filter>
+
+		<filter
+			x="-0.4"
+			width="1.8"
+			style="color-interpolation-filters:sRGB;"
+			inkscape:label="Material Shadow 2"
+			id="materialshadow_filter2"
+			height="1.8"
+			y="-0.4">
+			<feFlood
+				flood-opacity="0.12"
+				flood-color="rgb(0,0,0)"
+				result="flood"
+				id="materialshadow_feFlood2" />
+			<feComposite
+				in="flood"
+				in2="SourceGraphic"
+				operator="in"
+				result="materialshadow_composite1"
+				id="materialshadow_feComposite2" />
+			<feGaussianBlur
+				in="materialshadow_composite1"
+				stdDeviation="36"
+				result="blur"
+				id="materialshadow_feGaussianBlur2"
+				dy="2" />
+			<feOffset
+				dx="0"
+				dy="4"
+				result="offset"
+				id="materialshadow_feOffset2" />
+			<feComposite
+				in="SourceGraphic"
+				in2="offset"
+				operator="over"
+				result="materialshadow_composite2"
+				id="materialshadow_feComposite2_2" />
+		</filter>
+
+		<filter
+			x="-0.4"
+			width="1.8"
+			y="-0.4"
+			height="1.8"
+			id="materialshadow_filter3"
+			inkscape:label="Material Shadow 3"
+			style="color-interpolation-filters:sRGB;">
+			<feFlood
+				id="materialshadow_feFlood3"
+				result="flood"
+				flood-color="rgb(0,0,0)"
+				flood-opacity="0.3" />
+			<feComposite
+				id="materialshadow_feComposite3"
+				result="materialshadow_composite1"
+				operator="in"
+				in2="SourceGraphic"
+				in="flood" />
+			<feGaussianBlur
+				id="materialshadow_feGaussianBlur3"
+				result="blur"
+				stdDeviation="10"
+				in="materialshadow_composite1"
+				dy="6" />
+			<feOffset
+				id="materialshadow_feOffset3"
+				result="offset"
+				dy="12"
+				dx="0" />
+			<feComposite
+				id="materialshadow_feComposite3_2"
+				result="materialshadow_composite2"
+				operator="over"
+				in2="offset"
+				in="SourceGraphic" />
+		</filter>
+	</defs>
+</svg>
