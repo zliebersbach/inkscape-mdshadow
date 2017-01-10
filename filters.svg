@@ -38,7 +38,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 			style="color-interpolation-filters:sRGB;">
 			<feFlood
 				id="materialshadow_feFlood1"
-				result="flood"
+				result="materialshadow_flood1"
 				flood-color="rgb(0,0,0)"
 				flood-opacity="0.14" />
 			<feComposite
@@ -46,23 +46,23 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 				result="materialshadow_composite1"
 				operator="in"
 				in2="SourceGraphic"
-				in="flood" />
+				in="materialshadow_flood1" />
 			<feGaussianBlur
 				id="materialshadow_feGaussianBlur1"
-				result="blur"
+				result="materialshadow_blur1"
 				stdDeviation="20"
 				in="materialshadow_composite1"
 				dy="12" />
 			<feOffset
 				id="materialshadow_feOffset1"
-				result="offset"
+				result="materialshadow_offset1"
 				dy="8"
 				dx="0" />
 			<feComposite
 				id="materialshadow_feComposite1_2"
-				result="materialshadow_composite2"
+				result="materialshadow_composite1_2"
 				operator="over"
-				in2="offset"
+				in2="materialshadow_offset1"
 				in="SourceGraphic" />
 		</filter>
 
@@ -77,30 +77,30 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 			<feFlood
 				flood-opacity="0.12"
 				flood-color="rgb(0,0,0)"
-				result="flood"
+				result="materialshadow_flood2"
 				id="materialshadow_feFlood2" />
 			<feComposite
-				in="flood"
+				in="materialshadow_flood2"
 				in2="SourceGraphic"
 				operator="in"
-				result="materialshadow_composite1"
+				result="materialshadow_composite2"
 				id="materialshadow_feComposite2" />
 			<feGaussianBlur
-				in="materialshadow_composite1"
+				in="materialshadow_composite2"
 				stdDeviation="36"
-				result="blur"
+				result="materialshadow_blur2"
 				id="materialshadow_feGaussianBlur2"
 				dy="2" />
 			<feOffset
 				dx="0"
 				dy="4"
-				result="offset"
+				result="materialshadow_offset2"
 				id="materialshadow_feOffset2" />
 			<feComposite
 				in="SourceGraphic"
-				in2="offset"
+				in2="materialshadow_offset2"
 				operator="over"
-				result="materialshadow_composite2"
+				result="materialshadow_composite2_2"
 				id="materialshadow_feComposite2_2" />
 		</filter>
 
@@ -114,31 +114,31 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 			style="color-interpolation-filters:sRGB;">
 			<feFlood
 				id="materialshadow_feFlood3"
-				result="flood"
+				result="materialshadow_flood3"
 				flood-color="rgb(0,0,0)"
 				flood-opacity="0.3" />
 			<feComposite
 				id="materialshadow_feComposite3"
-				result="materialshadow_composite1"
+				result="materialshadow_composite3"
 				operator="in"
 				in2="SourceGraphic"
-				in="flood" />
+				in="materialshadow_flood3" />
 			<feGaussianBlur
 				id="materialshadow_feGaussianBlur3"
-				result="blur"
+				result="materialshadow_blur3"
 				stdDeviation="10"
-				in="materialshadow_composite1"
+				in="materialshadow_composite3"
 				dy="6" />
 			<feOffset
 				id="materialshadow_feOffset3"
-				result="offset"
+				result="materialshadow_offset3"
 				dy="12"
 				dx="0" />
 			<feComposite
 				id="materialshadow_feComposite3_2"
-				result="materialshadow_composite2"
+				result="materialshadow_composite3_2"
 				operator="over"
-				in2="offset"
+				in2="materialshadow_offset3"
 				in="SourceGraphic" />
 		</filter>
 	</defs>
