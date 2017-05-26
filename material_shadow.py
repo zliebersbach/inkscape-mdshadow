@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #-*- coding: utf-8 -*-
-# inkscape-material-shadow, an Inkscape extension for creating Material Design shadows.
+# inkscape-mdshadow, an Inkscape extension for creating Material Design shadows.
 # Copyright (C) 2017  Kevin Boxhoorn
 #
 # This program is free software: you can redistribute it and/or modify
@@ -25,7 +25,7 @@ from lxml import etree
 
 inkex.localize()
 
-FILTER_ID = "materialshadow_filter%d"
+FILTER_ID = "mdshadow_filter%d"
 
 def xpath(e, path):
     return e.xpath(path, namespaces=inkex.NSS)

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!--
-inkscape-material-shadow, an Inkscape extension for creating Material Design shadows.
+inkscape-mdshadow, an Inkscape extension for creating Material Design shadows.
 Copyright (C) 2017  Kevin Boxhoorn
 
 This program is free software: you can redistribute it and/or modify
@@ -33,106 +33,106 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 			width="1.8"
 			style="color-interpolation-filters:sRGB;"
 			inkscape:label="Material Shadow 1"
-			id="materialshadow_filter1"
+			id="mdshadow_filter1"
 			height="1.8"
 			y="-0.4">
 			<feFlood
-				id="materialshadow1_feFlood1"
-				result="materialshadow1_flood1"
+				id="mdshadow1_feFlood1"
+				result="mdshadow1_flood1"
 				flood-color="rgb(0,0,0)"
 				flood-opacity="0.14" />
 			<feComposite
-				id="materialshadow1_feComposite1"
-				result="materialshadow1_composite1"
+				id="mdshadow1_feComposite1"
+				result="mdshadow1_composite1"
 				operator="in"
 				in2="SourceGraphic"
-				in="materialshadow1_flood1" />
+				in="mdshadow1_flood1" />
 			<feGaussianBlur
-				id="materialshadow1_feGaussianBlur1"
-				result="materialshadow1_blur1"
+				id="mdshadow1_feGaussianBlur1"
+				result="mdshadow1_blur1"
 				stdDeviation="4"
-				in="materialshadow1_composite1" />
+				in="mdshadow1_composite1" />
 			<feOffset
-				id="materialshadow1_feOffset1"
-				result="materialshadow1_offset1"
+				id="mdshadow1_feOffset1"
+				result="mdshadow1_offset1"
 				dy="4"
 				dx="0" />
 			<feComposite
-				id="materialshadow1_feComposite1_2"
-				result="materialshadow1_composite1_2"
+				id="mdshadow1_feComposite1_2"
+				result="mdshadow1_composite1_2"
 				operator="over"
-				in2="materialshadow1_offset1"
+				in2="mdshadow1_offset1"
 				in="SourceGraphic" />
 
 			<feFlood
 				flood-opacity="0.12"
 				flood-color="rgb(0,0,0)"
-				result="materialshadow1_flood2"
-				id="materialshadow1_feFlood2" />
+				result="mdshadow1_flood2"
+				id="mdshadow1_feFlood2" />
 			<feComposite
-				in="materialshadow1_flood2"
+				in="mdshadow1_flood2"
 				in2="SourceGraphic"
 				operator="in"
-				result="materialshadow1_composite2"
-				id="materialshadow1_feComposite2" />
+				result="mdshadow1_composite2"
+				id="mdshadow1_feComposite2" />
 			<feGaussianBlur
-				in="materialshadow1_composite2"
+				in="mdshadow1_composite2"
 				stdDeviation="10"
-				result="materialshadow1_blur2"
-				id="materialshadow1_feGaussianBlur2" />
+				result="mdshadow1_blur2"
+				id="mdshadow1_feGaussianBlur2" />
 			<feOffset
 				dx="0"
 				dy="2"
-				result="materialshadow1_offset2"
-				id="materialshadow1_feOffset2" />
+				result="mdshadow1_offset2"
+				id="mdshadow1_feOffset2" />
 			<feComposite
 				in="SourceGraphic"
-				in2="materialshadow1_offset2"
+				in2="mdshadow1_offset2"
 				operator="over"
-				result="materialshadow1_composite2_2"
-				id="materialshadow1_feComposite2_2" />
+				result="mdshadow1_composite2_2"
+				id="mdshadow1_feComposite2_2" />
 
 			<feFlood
-				id="materialshadow1_feFlood3"
-				result="materialshadow1_flood3"
+				id="mdshadow1_feFlood3"
+				result="mdshadow1_flood3"
 				flood-color="rgb(0,0,0)"
 				flood-opacity="0.2" />
 			<feComposite
-				id="materialshadow1_feComposite3"
-				result="materialshadow1_composite3"
+				id="mdshadow1_feComposite3"
+				result="mdshadow1_composite3"
 				operator="in"
 				in2="SourceGraphic"
-				in="materialshadow1_flood3" />
+				in="mdshadow1_flood3" />
 			<feGaussianBlur
-				id="materialshadow1_feGaussianBlur3"
-				result="materialshadow1_blur3"
+				id="mdshadow1_feGaussianBlur3"
+				result="mdshadow1_blur3"
 				stdDeviation="2"
-				in="materialshadow1_composite3" />
+				in="mdshadow1_composite3" />
 			<feOffset
-				id="materialshadow1_feOffset3"
-				result="materialshadow1_offset3"
+				id="mdshadow1_feOffset3"
+				result="mdshadow1_offset3"
 				dy="6"
 				dx="0" />
 			<feComposite
-				id="materialshadow1_feComposite3_2"
-				result="materialshadow1_composite3_2"
+				id="mdshadow1_feComposite3_2"
+				result="mdshadow1_composite3_2"
 				operator="over"
-				in2="materialshadow1_offset3"
+				in2="mdshadow1_offset3"
 				in="SourceGraphic" />
 
 			<feMerge
-				id="materialshadow1_feMerge">
+				id="mdshadow1_feMerge">
 				<feMergeNode
-					id="materialshadow1_feMergeNode1"
-					in="materialshadow1_composite1_2" />
+					id="mdshadow1_feMergeNode1"
+					in="mdshadow1_composite1_2" />
 				<feMergeNode
-					id="materialshadow1_feMergeNode2"
-					in="materialshadow1_composite2_2" />
+					id="mdshadow1_feMergeNode2"
+					in="mdshadow1_composite2_2" />
 				<feMergeNode
-					id="materialshadow1_feMergeNode3"
-					in="materialshadow1_composite3_2" />
+					id="mdshadow1_feMergeNode3"
+					in="mdshadow1_composite3_2" />
 				<feMergeNode
-					id="materialshadow1_feMergeNode4"
+					id="mdshadow1_feMergeNode4"
 					in="SourceGraphic" />
 			</feMerge>
 		</filter>
@@ -142,106 +142,106 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 			width="1.8"
 			y="-0.4"
 			height="1.8"
-			id="materialshadow_filter2"
+			id="mdshadow_filter2"
 			inkscape:label="Material Shadow 2"
 			style="color-interpolation-filters:sRGB;">
 			<feFlood
-				id="materialshadow2_feFlood1"
-				result="materialshadow2_flood1"
+				id="mdshadow2_feFlood1"
+				result="mdshadow2_flood1"
 				flood-color="rgb(0,0,0)"
 				flood-opacity="0.14" />
 			<feComposite
-				id="materialshadow2_feComposite1"
-				result="materialshadow2_composite1"
+				id="mdshadow2_feComposite1"
+				result="mdshadow2_composite1"
 				operator="in"
 				in2="SourceGraphic"
-				in="materialshadow2_flood1" />
+				in="mdshadow2_flood1" />
 			<feGaussianBlur
-				id="materialshadow2_feGaussianBlur1"
-				result="materialshadow2_blur1"
+				id="mdshadow2_feGaussianBlur1"
+				result="mdshadow2_blur1"
 				stdDeviation="10"
-				in="materialshadow2_composite1" />
+				in="mdshadow2_composite1" />
 			<feOffset
-				id="materialshadow2_feOffset1"
-				result="materialshadow2_offset1"
+				id="mdshadow2_feOffset1"
+				result="mdshadow2_offset1"
 				dy="8"
 				dx="0" />
 			<feComposite
-				id="materialshadow2_feComposite1_2"
-				result="materialshadow2_composite1_2"
+				id="mdshadow2_feComposite1_2"
+				result="mdshadow2_composite1_2"
 				operator="over"
-				in2="materialshadow2_offset1"
+				in2="mdshadow2_offset1"
 				in="SourceGraphic" />
 
 			<feFlood
 				flood-opacity="0.12"
 				flood-color="rgb(0,0,0)"
-				result="materialshadow2_flood2"
-				id="materialshadow2_feFlood2" />
+				result="mdshadow2_flood2"
+				id="mdshadow2_feFlood2" />
 			<feComposite
-				in="materialshadow2_flood2"
+				in="mdshadow2_flood2"
 				in2="SourceGraphic"
 				operator="in"
-				result="materialshadow2_composite2"
-				id="materialshadow2_feComposite2" />
+				result="mdshadow2_composite2"
+				id="mdshadow2_feComposite2" />
 			<feGaussianBlur
-				in="materialshadow2_composite2"
+				in="mdshadow2_composite2"
 				stdDeviation="20"
-				result="materialshadow2_blur2"
-				id="materialshadow2_feGaussianBlur2" />
+				result="mdshadow2_blur2"
+				id="mdshadow2_feGaussianBlur2" />
 			<feOffset
 				dx="0"
 				dy="2"
-				result="materialshadow2_offset2"
-				id="materialshadow2_feOffset2" />
+				result="mdshadow2_offset2"
+				id="mdshadow2_feOffset2" />
 			<feComposite
 				in="SourceGraphic"
-				in2="materialshadow2_offset2"
+				in2="mdshadow2_offset2"
 				operator="over"
-				result="materialshadow2_composite2_2"
-				id="materialshadow2_feComposite2_2" />
+				result="mdshadow2_composite2_2"
+				id="mdshadow2_feComposite2_2" />
 
 			<feFlood
-				id="materialshadow2_feFlood3"
-				result="materialshadow2_flood3"
+				id="mdshadow2_feFlood3"
+				result="mdshadow2_flood3"
 				flood-color="rgb(0,0,0)"
 				flood-opacity="0.3" />
 			<feComposite
-				id="materialshadow2_feComposite3"
-				result="materialshadow2_composite3"
+				id="mdshadow2_feComposite3"
+				result="mdshadow2_composite3"
 				operator="in"
 				in2="SourceGraphic"
-				in="materialshadow2_flood3" />
+				in="mdshadow2_flood3" />
 			<feGaussianBlur
-				id="materialshadow2_feGaussianBlur3"
-				result="materialshadow2_blur3"
+				id="mdshadow2_feGaussianBlur3"
+				result="mdshadow2_blur3"
 				stdDeviation="8"
-				in="materialshadow2_composite3" />
+				in="mdshadow2_composite3" />
 			<feOffset
-				id="materialshadow2_feOffset3"
-				result="materialshadow2_offset3"
+				id="mdshadow2_feOffset3"
+				result="mdshadow2_offset3"
 				dy="4"
 				dx="0" />
 			<feComposite
-				id="materialshadow2_feComposite3_2"
-				result="materialshadow2_composite3_2"
+				id="mdshadow2_feComposite3_2"
+				result="mdshadow2_composite3_2"
 				operator="over"
-				in2="materialshadow2_offset3"
+				in2="mdshadow2_offset3"
 				in="SourceGraphic" />
 
 			<feMerge
-				id="materialshadow2_feMerge">
+				id="mdshadow2_feMerge">
 				<feMergeNode
-					id="materialshadow2_feMergeNode1"
-					in="materialshadow2_composite1_2" />
+					id="mdshadow2_feMergeNode1"
+					in="mdshadow2_composite1_2" />
 				<feMergeNode
-					id="materialshadow2_feMergeNode2"
-					in="materialshadow2_composite2_2" />
+					id="mdshadow2_feMergeNode2"
+					in="mdshadow2_composite2_2" />
 				<feMergeNode
-					id="materialshadow2_feMergeNode3"
-					in="materialshadow2_composite3_2" />
+					id="mdshadow2_feMergeNode3"
+					in="mdshadow2_composite3_2" />
 				<feMergeNode
-					id="materialshadow2_feMergeNode4"
+					id="mdshadow2_feMergeNode4"
 					in="SourceGraphic" />
 			</feMerge>
 		</filter>
@@ -251,106 +251,106 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 			width="1.8"
 			y="-0.4"
 			height="1.8"
-			id="materialshadow_filter3"
+			id="mdshadow_filter3"
 			inkscape:label="Material Shadow 3"
 			style="color-interpolation-filters:sRGB;">
 			<feFlood
-				id="materialshadow3_feFlood1"
-				result="materialshadow3_flood1"
+				id="mdshadow3_feFlood1"
+				result="mdshadow3_flood1"
 				flood-color="rgb(0,0,0)"
 				flood-opacity="0.14" />
 			<feComposite
-				id="materialshadow3_feComposite1"
-				result="materialshadow3_composite1"
+				id="mdshadow3_feComposite1"
+				result="mdshadow3_composite1"
 				operator="in"
 				in2="SourceGraphic"
-				in="materialshadow3_flood1" />
+				in="mdshadow3_flood1" />
 			<feGaussianBlur
-				id="materialshadow3_feGaussianBlur1"
-				result="materialshadow3_blur1"
+				id="mdshadow3_feGaussianBlur1"
+				result="mdshadow3_blur1"
 				stdDeviation="20"
-				in="materialshadow3_composite1" />
+				in="mdshadow3_composite1" />
 			<feOffset
-				id="materialshadow3_feOffset1"
-				result="materialshadow3_offset1"
+				id="mdshadow3_feOffset1"
+				result="mdshadow3_offset1"
 				dy="8"
 				dx="0" />
 			<feComposite
-				id="materialshadow3_feComposite1_2"
-				result="materialshadow3_composite1_2"
+				id="mdshadow3_feComposite1_2"
+				result="mdshadow3_composite1_2"
 				operator="over"
-				in2="materialshadow3_offset1"
+				in2="mdshadow3_offset1"
 				in="SourceGraphic" />
 
 			<feFlood
 				flood-opacity="0.12"
 				flood-color="rgb(0,0,0)"
-				result="materialshadow3_flood2"
-				id="materialshadow3_feFlood2" />
+				result="mdshadow3_flood2"
+				id="mdshadow3_feFlood2" />
 			<feComposite
-				in="materialshadow3_flood2"
+				in="mdshadow3_flood2"
 				in2="SourceGraphic"
 				operator="in"
-				result="materialshadow3_composite2"
-				id="materialshadow3_feComposite2" />
+				result="mdshadow3_composite2"
+				id="mdshadow3_feComposite2" />
 			<feGaussianBlur
-				in="materialshadow3_composite2"
+				in="mdshadow3_composite2"
 				stdDeviation="36"
-				result="materialshadow3_blur2"
-				id="materialshadow3_feGaussianBlur2" />
+				result="mdshadow3_blur2"
+				id="mdshadow3_feGaussianBlur2" />
 			<feOffset
 				dx="0"
 				dy="4"
-				result="materialshadow3_offset2"
-				id="materialshadow3_feOffset2" />
+				result="mdshadow3_offset2"
+				id="mdshadow3_feOffset2" />
 			<feComposite
 				in="SourceGraphic"
-				in2="materialshadow3_offset2"
+				in2="mdshadow3_offset2"
 				operator="over"
-				result="materialshadow3_composite2_2"
-				id="materialshadow3_feComposite2_2" />
+				result="mdshadow3_composite2_2"
+				id="mdshadow3_feComposite2_2" />
 
 			<feFlood
-				id="materialshadow3_feFlood3"
-				result="materialshadow3_flood3"
+				id="mdshadow3_feFlood3"
+				result="mdshadow3_flood3"
 				flood-color="rgb(0,0,0)"
 				flood-opacity="0.3" />
 			<feComposite
-				id="materialshadow3_feComposite3"
-				result="materialshadow3_composite3"
+				id="mdshadow3_feComposite3"
+				result="mdshadow3_composite3"
 				operator="in"
 				in2="SourceGraphic"
-				in="materialshadow3_flood3" />
+				in="mdshadow3_flood3" />
 			<feGaussianBlur
-				id="materialshadow3_feGaussianBlur3"
-				result="materialshadow3_blur3"
+				id="mdshadow3_feGaussianBlur3"
+				result="mdshadow3_blur3"
 				stdDeviation="10"
-				in="materialshadow3_composite3" />
+				in="mdshadow3_composite3" />
 			<feOffset
-				id="materialshadow3_feOffset3"
-				result="materialshadow3_offset3"
+				id="mdshadow3_feOffset3"
+				result="mdshadow3_offset3"
 				dy="12"
 				dx="0" />
 			<feComposite
-				id="materialshadow3_feComposite3_2"
-				result="materialshadow3_composite3_2"
+				id="mdshadow3_feComposite3_2"
+				result="mdshadow3_composite3_2"
 				operator="over"
-				in2="materialshadow3_offset3"
+				in2="mdshadow3_offset3"
 				in="SourceGraphic" />
 
 			<feMerge
-				id="materialshadow3_feMerge">
+				id="mdshadow3_feMerge">
 				<feMergeNode
-					id="materialshadow3_feMergeNode1"
-					in="materialshadow3_composite1_2" />
+					id="mdshadow3_feMergeNode1"
+					in="mdshadow3_composite1_2" />
 				<feMergeNode
-					id="materialshadow3_feMergeNode2"
-					in="materialshadow3_composite2_2" />
+					id="mdshadow3_feMergeNode2"
+					in="mdshadow3_composite2_2" />
 				<feMergeNode
-					id="materialshadow3_feMergeNode3"
-					in="materialshadow3_composite3_2" />
+					id="mdshadow3_feMergeNode3"
+					in="mdshadow3_composite3_2" />
 				<feMergeNode
-					id="materialshadow3_feMergeNode4"
+					id="mdshadow3_feMergeNode4"
 					in="SourceGraphic" />
 			</feMerge>
 		</filter>
@@ -360,106 +360,106 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 			width="1.8"
 			y="-0.4"
 			height="1.8"
-			id="materialshadow_filter4"
+			id="mdshadow_filter4"
 			inkscape:label="Material Shadow 4"
 			style="color-interpolation-filters:sRGB;">
 			<feFlood
-				id="materialshadow4_feFlood1"
-				result="materialshadow4_flood1"
+				id="mdshadow4_feFlood1"
+				result="mdshadow4_flood1"
 				flood-color="rgb(0,0,0)"
 				flood-opacity="0.14" />
 			<feComposite
-				id="materialshadow4_feComposite1"
-				result="materialshadow4_composite1"
+				id="mdshadow4_feComposite1"
+				result="mdshadow4_composite1"
 				operator="in"
 				in2="SourceGraphic"
-				in="materialshadow4_flood1" />
+				in="mdshadow4_flood1" />
 			<feGaussianBlur
-				id="materialshadow4_feGaussianBlur1"
-				result="materialshadow4_blur1"
+				id="mdshadow4_feGaussianBlur1"
+				result="mdshadow4_blur1"
 				stdDeviation="20"
-				in="materialshadow4_composite1" />
+				in="mdshadow4_composite1" />
 			<feOffset
-				id="materialshadow4_feOffset1"
-				result="materialshadow4_offset1"
+				id="mdshadow4_feOffset1"
+				result="mdshadow4_offset1"
 				dy="16"
 				dx="0" />
 			<feComposite
-				id="materialshadow4_feComposite1_2"
-				result="materialshadow4_composite1_2"
+				id="mdshadow4_feComposite1_2"
+				result="mdshadow4_composite1_2"
 				operator="over"
-				in2="materialshadow4_offset1"
+				in2="mdshadow4_offset1"
 				in="SourceGraphic" />
 
 			<feFlood
 				flood-opacity="0.12"
 				flood-color="rgb(0,0,0)"
-				result="materialshadow4_flood2"
-				id="materialshadow4_feFlood2" />
+				result="mdshadow4_flood2"
+				id="mdshadow4_feFlood2" />
 			<feComposite
-				in="materialshadow4_flood2"
+				in="mdshadow4_flood2"
 				in2="SourceGraphic"
 				operator="in"
-				result="materialshadow4_composite2"
-				id="materialshadow4_feComposite2" />
+				result="mdshadow4_composite2"
+				id="mdshadow4_feComposite2" />
 			<feGaussianBlur
-				in="materialshadow4_composite2"
+				in="mdshadow4_composite2"
 				stdDeviation="28"
-				result="materialshadow4_blur2"
-				id="materialshadow4_feGaussianBlur2" />
+				result="mdshadow4_blur2"
+				id="mdshadow4_feGaussianBlur2" />
 			<feOffset
 				dx="0"
 				dy="6"
-				result="materialshadow4_offset2"
-				id="materialshadow4_feOffset2" />
+				result="mdshadow4_offset2"
+				id="mdshadow4_feOffset2" />
 			<feComposite
 				in="SourceGraphic"
-				in2="materialshadow4_offset2"
+				in2="mdshadow4_offset2"
 				operator="over"
-				result="materialshadow4_composite2_2"
-				id="materialshadow4_feComposite2_2" />
+				result="mdshadow4_composite2_2"
+				id="mdshadow4_feComposite2_2" />
 
 			<feFlood
-				id="materialshadow4_feFlood3"
-				result="materialshadow4_flood3"
+				id="mdshadow4_feFlood3"
+				result="mdshadow4_flood3"
 				flood-color="rgb(0,0,0)"
 				flood-opacity="0.2" />
 			<feComposite
-				id="materialshadow4_feComposite3"
-				result="materialshadow4_composite3"
+				id="mdshadow4_feComposite3"
+				result="mdshadow4_composite3"
 				operator="in"
 				in2="SourceGraphic"
-				in="materialshadow4_flood3" />
+				in="mdshadow4_flood3" />
 			<feGaussianBlur
-				id="materialshadow4_feGaussianBlur3"
-				result="materialshadow4_blur3"
+				id="mdshadow4_feGaussianBlur3"
+				result="mdshadow4_blur3"
 				stdDeviation="10"
-				in="materialshadow4_composite3" />
+				in="mdshadow4_composite3" />
 			<feOffset
-				id="materialshadow4_feOffset3"
-				result="materialshadow4_offset3"
+				id="mdshadow4_feOffset3"
+				result="mdshadow4_offset3"
 				dy="10"
 				dx="0" />
 			<feComposite
-				id="materialshadow4_feComposite3_2"
-				result="materialshadow4_composite3_2"
+				id="mdshadow4_feComposite3_2"
+				result="mdshadow4_composite3_2"
 				operator="over"
-				in2="materialshadow4_offset3"
+				in2="mdshadow4_offset3"
 				in="SourceGraphic" />
 
 			<feMerge
-				id="materialshadow4_feMerge">
+				id="mdshadow4_feMerge">
 				<feMergeNode
-					id="materialshadow4_feMergeNode1"
-					in="materialshadow4_composite1_2" />
+					id="mdshadow4_feMergeNode1"
+					in="mdshadow4_composite1_2" />
 				<feMergeNode
-					id="materialshadow4_feMergeNode2"
-					in="materialshadow4_composite2_2" />
+					id="mdshadow4_feMergeNode2"
+					in="mdshadow4_composite2_2" />
 				<feMergeNode
-					id="materialshadow4_feMergeNode3"
-					in="materialshadow4_composite3_2" />
+					id="mdshadow4_feMergeNode3"
+					in="mdshadow4_composite3_2" />
 				<feMergeNode
-					id="materialshadow4_feMergeNode4"
+					id="mdshadow4_feMergeNode4"
 					in="SourceGraphic" />
 			</feMerge>
 		</filter>
@@ -469,106 +469,106 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 			width="1.8"
 			y="-0.4"
 			height="1.8"
-			id="materialshadow_filter5"
+			id="mdshadow_filter5"
 			inkscape:label="Material Shadow 5"
 			style="color-interpolation-filters:sRGB;">
 			<feFlood
-				id="materialshadow5_feFlood1"
-				result="materialshadow5_flood1"
+				id="mdshadow5_feFlood1"
+				result="mdshadow5_flood1"
 				flood-color="rgb(0,0,0)"
 				flood-opacity="0.14" />
 			<feComposite
-				id="materialshadow5_feComposite1"
-				result="materialshadow5_composite1"
+				id="mdshadow5_feComposite1"
+				result="mdshadow5_composite1"
 				operator="in"
 				in2="SourceGraphic"
-				in="materialshadow5_flood1" />
+				in="mdshadow5_flood1" />
 			<feGaussianBlur
-				id="materialshadow5_feGaussianBlur1"
-				result="materialshadow5_blur1"
+				id="mdshadow5_feGaussianBlur1"
+				result="mdshadow5_blur1"
 				stdDeviation="48"
-				in="materialshadow5_composite1" />
+				in="mdshadow5_composite1" />
 			<feOffset
-				id="materialshadow5_feOffset1"
-				result="materialshadow5_offset1"
+				id="mdshadow5_feOffset1"
+				result="mdshadow5_offset1"
 				dy="16"
 				dx="0" />
 			<feComposite
-				id="materialshadow5_feComposite1_2"
-				result="materialshadow5_composite1_2"
+				id="mdshadow5_feComposite1_2"
+				result="mdshadow5_composite1_2"
 				operator="over"
-				in2="materialshadow5_offset1"
+				in2="mdshadow5_offset1"
 				in="SourceGraphic" />
 
 			<feFlood
 				flood-opacity="0.12"
 				flood-color="rgb(0,0,0)"
-				result="materialshadow5_flood2"
-				id="materialshadow5_feFlood2" />
+				result="mdshadow5_flood2"
+				id="mdshadow5_feFlood2" />
 			<feComposite
-				in="materialshadow5_flood2"
+				in="mdshadow5_flood2"
 				in2="SourceGraphic"
 				operator="in"
-				result="materialshadow5_composite2"
-				id="materialshadow5_feComposite2" />
+				result="mdshadow5_composite2"
+				id="mdshadow5_feComposite2" />
 			<feGaussianBlur
-				in="materialshadow5_composite2"
+				in="mdshadow5_composite2"
 				stdDeviation="60"
-				result="materialshadow5_blur2"
-				id="materialshadow5_feGaussianBlur2" />
+				result="mdshadow5_blur2"
+				id="mdshadow5_feGaussianBlur2" />
 			<feOffset
 				dx="0"
 				dy="12"
-				result="materialshadow5_offset2"
-				id="materialshadow5_feOffset2" />
+				result="mdshadow5_offset2"
+				id="mdshadow5_feOffset2" />
 			<feComposite
 				in="SourceGraphic"
-				in2="materialshadow5_offset2"
+				in2="mdshadow5_offset2"
 				operator="over"
-				result="materialshadow5_composite2_2"
-				id="materialshadow5_feComposite2_2" />
+				result="mdshadow5_composite2_2"
+				id="mdshadow5_feComposite2_2" />
 
 			<feFlood
-				id="materialshadow5_feFlood3"
-				result="materialshadow5_flood3"
+				id="mdshadow5_feFlood3"
+				result="mdshadow5_flood3"
 				flood-color="rgb(0,0,0)"
 				flood-opacity="0.2" />
 			<feComposite
-				id="materialshadow5_feComposite3"
-				result="materialshadow5_composite3"
+				id="mdshadow5_feComposite3"
+				result="mdshadow5_composite3"
 				operator="in"
 				in2="SourceGraphic"
-				in="materialshadow5_flood3" />
+				in="mdshadow5_flood3" />
 			<feGaussianBlur
-				id="materialshadow5_feGaussianBlur3"
-				result="materialshadow5_blur3"
+				id="mdshadow5_feGaussianBlur3"
+				result="mdshadow5_blur3"
 				stdDeviation="20"
-				in="materialshadow5_composite3" />
+				in="mdshadow5_composite3" />
 			<feOffset
-				id="materialshadow5_feOffset3"
-				result="materialshadow5_offset3"
+				id="mdshadow5_feOffset3"
+				result="mdshadow5_offset3"
 				dy="16"
 				dx="0" />
 			<feComposite
-				id="materialshadow5_feComposite3_2"
-				result="materialshadow5_composite3_2"
+				id="mdshadow5_feComposite3_2"
+				result="mdshadow5_composite3_2"
 				operator="over"
-				in2="materialshadow5_offset3"
+				in2="mdshadow5_offset3"
 				in="SourceGraphic" />
 
 			<feMerge
-				id="materialshadow5_feMerge">
+				id="mdshadow5_feMerge">
 				<feMergeNode
-					id="materialshadow5_feMergeNode1"
-					in="materialshadow5_composite1_2" />
+					id="mdshadow5_feMergeNode1"
+					in="mdshadow5_composite1_2" />
 				<feMergeNode
-					id="materialshadow5_feMergeNode2"
-					in="materialshadow5_composite2_2" />
+					id="mdshadow5_feMergeNode2"
+					in="mdshadow5_composite2_2" />
 				<feMergeNode
-					id="materialshadow5_feMergeNode3"
-					in="materialshadow5_composite3_2" />
+					id="mdshadow5_feMergeNode3"
+					in="mdshadow5_composite3_2" />
 				<feMergeNode
-					id="materialshadow5_feMergeNode4"
+					id="mdshadow5_feMergeNode4"
 					in="SourceGraphic" />
 			</feMerge>
 		</filter>
